@@ -24,5 +24,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Deploy
 Run `nd build`.
-URL: `https://nisholin.github.io/nisholin-server`
+URL: https://nisholin.github.io/nisholin-server
 
