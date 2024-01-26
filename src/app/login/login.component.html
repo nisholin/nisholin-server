@@ -1,0 +1,18 @@
+<p>LOGIN</p>
+
+<input type="text" [(ngModel)]="data.uname" placeholder="admin"/>
+<input type="password"  [(ngModel)]="data.password" placeholder="123"/>
+<button (click)="login(data)">Login</button>
+
+<div>
+<form class="padding" (ngSubmit)="createEmployee()">
+    <input class="padding"  type="text" [(ngModel)]="createEmpModel.firstName" placeholder="First Name"/> <br/>
+    <input class="padding" type="text" [(ngModel)]="createEmpModel.lastName" placeholder="Last Name"/><br/>
+    <input class="padding" type="email" [(ngModel)]="createEmpModel.email" placeholder="Email"/><br/>
+    <input class="padding" type="text" [(ngModel)]="createEmpModel.userName" placeholder="User Name"/><br/>
+    <input class="padding" type="password"  [(ngModel)]="createEmpModel.password" placeholder="Password"/> <br/>
+
+    <button class="padding"  type="submit" >Create</button>
+
+</form>
+</div>

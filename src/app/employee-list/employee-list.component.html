@@ -1,0 +1,21 @@
+<h2> Employee List</h2>
+<button (click)="logout()" >Log out</button>
+<table class="table table-striped">
+    <thead>
+        <tr *ngFor="let column of columns">
+            <th class="header-container" (click)="sortColumn(column)">{{column.displayName}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.email}}</td>
+            <td>
+                <button class="btn btn-info" (click)="updateEmployee(employee.id)">Update</button>&nbsp;
+                <button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button>&nbsp;
+                <button class="btn btn-info" (click)="viewEmployee(employee.id)">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
